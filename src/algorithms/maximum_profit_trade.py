@@ -4,10 +4,10 @@
 ##   A list of closing prices of a stock for the past few days
 ##   e.g. [10, 7, 5, 8, 11, 9]
 ## Constraints and clarifications
-##   - You can buy / sell at the closing price at close of market hours on that day
-##   - You will buy and sell only one unit of stock
-##   - You can sell only after you buy
-##   - You can not buy and sell on the same day
+##   You can buy / sell at the closing price at close of market hours on that day
+##   You will buy and sell only one unit of stock
+##   You can sell only after you buy
+##   You can not buy and sell on the same day
 ## Output
 ##   6
 ## Explanation

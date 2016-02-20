@@ -4,7 +4,7 @@
 ##   A list of available coins & an amount
 ##   e.g. [1, 5, 10, 21, 25] & 63
 ## Constraints and clarifications
-##   - There is infinite supply of coins of each type
+##   There is infinite supply of coins of each type
 ## Output
 ##   3
 ## Explanation
