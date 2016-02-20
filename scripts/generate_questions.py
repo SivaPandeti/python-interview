@@ -14,7 +14,8 @@ for folder_name in os.listdir(SRC_DIR):
     contents = []
     for filename in os.listdir(os.path.join(SRC_DIR, folder_name)):
       problem = ' '.join([w.capitalize() for w in filename.replace('.py', '').split('_')])
-      toc.append('{}. [{}]({})'.format(i, problem, problem.replace(' ', '-')))
+      problem_link = '-'.join([w for w in filename.replace('.py', '').split('_')])
+      toc.append('{}. [{}]({})'.format(i, problem, problem_link))
       with open(os.path.join(SRC_DIR, folder_name, filename), 'r') as f:
         lines = [line.strip() for line in f.readlines() if line.startswith('##')]
       formatted_lines = ['## ' + problem]
