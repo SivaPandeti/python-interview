@@ -5,6 +5,8 @@ BASE_DIR = os.path.dirname(SCRIPT_DIR)
 SRC_DIR = os.path.join(BASE_DIR, 'src')
 Q_DIR = os.path.join(BASE_DIR, 'questions')
 
+GIT_BASE_URL = 'https://github.com/SivaPandeti/python-interview/blob/master/src'
+
 if not os.path.exists(Q_DIR):
   os.makedirs(Q_DIR)
 
@@ -22,8 +24,8 @@ for folder_name in os.listdir(SRC_DIR):
       formatted_lines = ['## ' + problem]
       formatted_lines += [line[5:] if line.startswith('##   ') else '#' + line for line in lines]
       formatted_lines += [' ']
-      contents.append('\n'.join(formatted_lines))
+      solution = '### Solution\n[click here]{}/{}/{}\n'.format(GIT_BASE_URL, folder_name, filename)
+      contents.append('\n'.join(formatted_lines) + solution)
       i += 1
     of.write('\n'.join(toc) + '\n\n')
     of.write('\n'.join(contents))
-

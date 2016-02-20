@@ -16,7 +16,9 @@ There is infinite supply of coins of each type
 In the sample input, you would make maximum profit of 6 if you buy at 5 and sell at 11
 ### References
 [Coin change](http://interactivepython.org/runestone/static/pythonds/Recursion/DynamicProgramming.html)
- 
+ ### Solution
+[click here]https://github.com/SivaPandeti/python-interview/blob/master/src/algorithms/coin_change.py
+
 ## Maximum Profit Trade
 ### Objective
 Write an function to find the maximum possible profit
@@ -33,4 +35,5 @@ You can not buy and sell on the same day
 ### Explanation
 In the sample input, you would make maximum profit of 6 if you buy at 5 and sell at 11
 ### References
- 
+ ### Solution
+[click here]https://github.com/SivaPandeti/python-interview/blob/master/src/algorithms/maximum_profit_trade.py
