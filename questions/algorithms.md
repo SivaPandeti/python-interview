@@ -1,32 +1,36 @@
-# Coin Change
-## Objective
+# Questions
+1. [Coin Change](#coin-change) 
+2. [Maximum Profit Trade](#maximum-profit-trade)
+
+## Coin Change
+### Objective
 Write an function to find the minimum number of coins for giving change
-## Input
+### Input
 A list of available coins & an amount
 e.g. [1, 5, 10, 21, 25] & 63
-## Constraints and clarifications
+### Constraints and clarifications
 There is infinite supply of coins of each type
-## Output
+### Output
 3
-## Explanation
+### Explanation
 In the sample input, you would make maximum profit of 6 if you buy at 5 and sell at 11
-## References
+### References
 [Coin change](http://interactivepython.org/runestone/static/pythonds/Recursion/DynamicProgramming.html)
  
-# Maximum Profit Trade
-## Objective
+## Maximum Profit Trade
+### Objective
 Write an function to find the maximum possible profit
-## Input
+### Input
 A list of closing prices of a stock for the past few days
 e.g. [10, 7, 5, 8, 11, 9]
-## Constraints and clarifications
+### Constraints and clarifications
 You can buy / sell at the closing price at close of market hours on that day
 You will buy and sell only one unit of stock
 You can sell only after you buy
 You can not buy and sell on the same day
-## Output
+### Output
 6
-## Explanation
+### Explanation
 In the sample input, you would make maximum profit of 6 if you buy at 5 and sell at 11
-## References
+### References
  
