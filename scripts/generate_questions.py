@@ -1,6 +1,7 @@
 import os
 
-BASE_DIR = os.path.dirname(os.getcwd())
+SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
+BASE_DIR = os.path.dirname(SCRIPT_DIR)
 SRC_DIR = os.path.join(BASE_DIR, 'src')
 Q_DIR = os.path.join(BASE_DIR, 'questions')
 
@@ -14,7 +15,7 @@ for folder_name in os.listdir(SRC_DIR):
     contents = []
     for filename in os.listdir(os.path.join(SRC_DIR, folder_name)):
       problem = ' '.join([w.capitalize() for w in filename.replace('.py', '').split('_')])
-      problem_link = '-'.join([w for w in filename.replace('.py', '').split('_')])
+      problem_link = '#' + '-'.join([w for w in filename.replace('.py', '').split('_')])
       toc.append('{}. [{}]({})'.format(i, problem, problem_link))
       with open(os.path.join(SRC_DIR, folder_name, filename), 'r') as f:
         lines = [line.strip() for line in f.readlines() if line.startswith('##')]

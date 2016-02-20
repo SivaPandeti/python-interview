@@ -1,6 +1,6 @@
 # Questions
-1. [Coin Change](coin-change)
-2. [Maximum Profit Trade](maximum-profit-trade)
+1. [Coin Change](#coin-change)
+2. [Maximum Profit Trade](#maximum-profit-trade)
 
 ## Coin Change
 ### Objective
