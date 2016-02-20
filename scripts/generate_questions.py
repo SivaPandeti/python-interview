@@ -23,8 +23,8 @@ for folder_name in os.listdir(SRC_DIR):
         lines = [line.strip() for line in f.readlines() if line.startswith('##')]
       formatted_lines = ['## ' + problem]
       formatted_lines += [line[5:] if line.startswith('##   ') else '#' + line for line in lines]
-      formatted_lines += [' ']
-      solution = '### Solution\n[click here]{}/{}/{}\n'.format(GIT_BASE_URL, folder_name, filename)
+      # formatted_lines += [' ']
+      solution = '\n### Solution\n[click here]({}/{}/{})\n'.format(GIT_BASE_URL, folder_name, filename)
       contents.append('\n'.join(formatted_lines) + solution)
       i += 1
     of.write('\n'.join(toc) + '\n\n')
