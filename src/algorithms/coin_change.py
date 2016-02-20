@@ -18,8 +18,11 @@ def coins(n, C, A):
   if not A[n]:
     A[n] = min([1 + coins(n-c, C, A) for c in C if c < n])
   return A[n]
-C = [1, 5, 10, 21, 25]
-n = 63
-A = [0] * (n+1)
-print coins(n, C, A)
-assert 3 == coins(n, C, A)
+
+
+if __name__ == '__main__':
+  C = [1, 5, 10, 21, 25]
+  n = 63
+  A = [0] * (n+1)
+  print coins(n, C, A)
+  assert 3 == coins(n, C, A)

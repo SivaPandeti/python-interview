@@ -24,6 +24,7 @@ def max_profit(A):
     buy = min(buy, A[i])
   return profit
 
-A = [10, 7, 5, 8, 11, 9]
-print max_profit(A)
-assert 6 == max_profit(A)
+if __name__ == '__main__':
+  A = [10, 7, 5, 8, 11, 9]
+  print max_profit(A)
+  assert 6 == max_profit(A)
