@@ -6,8 +6,8 @@
 ### Objective
 Write an function to find the minimum number of coins for giving change
 ### Input
-- A list of available coins & an amount.
-- e.g. [1, 5, 10, 21, 25] & 63
+  - A list of available coins & an amount.
+  - e.g. [1, 5, 10, 21, 25] & 63
 ### Constraints and clarifications
 There is infinite supply of coins of each type
 ### Output
